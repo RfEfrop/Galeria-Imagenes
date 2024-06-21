@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Imágenes</h1>
+        <nav>
+            <button class="filter-btn" data-category="all">Todo</button>
+            <button class="filter-btn" data-category="nature">Naturaleza</button>
+            <button class="filter-btn" data-category="cities">Ciudades</button>
+            <button class="filter-btn" data-category="animals">Animales</button>
+        </nav>
+    </header>
+    <main class="gallery-container">
+        <div class="slider">
+            <div class="image-item" data-category="nature">
+                <img src="images/nature1.jpg" alt="Naturaleza 1">
+            </div>
+            <div class="image-item" data-category="nature">
+                <img src="images/nature2.jpg" alt="Naturaleza 2">
+            </div>
+            <div class="image-item" data-category="cities">
+                <img src="images/city1.jpg" alt="Ciudad 1">
+            </div>
+            <div class="image-item" data-category="cities">
+                <img src="images/city2.jpg" alt="Ciudad 2">
+            </div>
+            <div class="image-item" data-category="animals">
+                <img src="images/animal1.jpg" alt="Animal 1">
+            </div>
+            <div class="image-item" data-category="animals">
+                <img src="images/animal2.jpg" alt="Animal 2">
+            </div>
+            <!-- Añadir más imágenes según sea necesario -->
+        </div>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
